@@ -1,6 +1,6 @@
 //typescript
 
-// 1:Types
+// 1:TYPES
 let a: number;
 let b : boolean;
 let c: string;
@@ -13,7 +13,7 @@ enum Color {red =0, green =1, blue= 2, purple = 3};
 let backgroundColor = Color.red;
 
 
-//2:Type assertion
+//2:TYPE ASSERTION
 let message ;
 message = 'abc';
 
@@ -24,7 +24,7 @@ let endsWithC = (<string>message.endsWith('c');
 let alternateiveWay = (message as string).endsWith('c');
 
 
-//3:arrow function
+//3: ARROW FUNCTION
 
 //javascript function
 let log = function(message) {
@@ -40,7 +40,7 @@ let doLog = (message) => console.log(message);
 let doBlog = () => console.log();
 
 
-//4: Interface/ custom typescript
+//4: INTERFACE/ custom typescript
 
 // example shows to implement interface:(do not want all the parameters specially more than two)
 
@@ -75,9 +75,7 @@ drawArea ({
   y:2
 })
 
-
-
-//5: Classes
+//5: CLASSES
 
 // two properties x, and y. With a fucntion called city. Like we said interface is for declarion not implementation.
 
@@ -97,12 +95,7 @@ class Point {
   }
 }
 
-
-
-
-
-//6: Objects.
-
+//6: OBJECTS
 //This point is a class. The point at the bottom of the class is an Object.
 class Place {
   x: number;
@@ -126,15 +119,13 @@ place.area();
 
 
 
-//7: Constructors.Typescript unlike c# cannot have multiple constructors.
+//7: CONSTRUCTORS.Typescript unlike c# cannot have multiple constructors.
 // ? makes parameters values optional. KNow are PointOne function can be used somewhere else with any parametets they need
-
-
 class PointOne {
   x: number;
   y:number;
 
-  //Constructors
+//Constructors
 constructor(x?: number, y?: number) {
   this.x = x;
   this.y = y;
@@ -149,11 +140,11 @@ let pointOne = new PointOne();
 pointOne.drawOne();
 
 
-//8: AccesModifiers: lets take example from above.
+//8: ACCESSMODIFERS: lets take example from above.
 //typescript has 3 AccesModifiers Public, Private, Protected.
 // because we added private to our fields when we call the foos method we cannot change its properties.
 // can add accessmodifers on fields , properties and methods.
-//by default assumes its public. 
+//by default assumes its public.
 
 class foo {
   //2 fields
